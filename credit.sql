@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2020 at 02:40 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.10
+-- Generation Time: Jan 19, 2021 at 07:58 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -38,13 +39,11 @@ CREATE TABLE `history` (
 --
 
 INSERT INTO `history` (`sender`, `receiver`, `trans_amount`) VALUES
-('Soham Lanke', 'Nikhil Duttaroy', 100),
-('Ruthvij Rane', 'Nikhil Duttaroy', 100),
-('Nikhil Duttaroy', 'Chinmay Mhatre', 500),
-('Chinmay Mhatre', 'Ritika Radhakrishnan', 250),
-('Nikhil Duttaroy', 'Chinmay Mhatre', 200),
-('Tanmay Hinge', 'Ritika Radhakrishnan', 200),
-('Chinmay Mhatre', 'Nikhil Duttaroy', 500);
+('Akshay Savad', 'Prajkta Ghorpade', 10),
+('Akshay Savad', 'Ajay Ghorpade', 50),
+('Prajkta Ghorpade', 'Blessy Thomas', 30),
+('Blessy Thomas', 'Sarika Patil', 200),
+('Sarika Patil', 'Akshay Savad', 150);
 
 -- --------------------------------------------------------
 
@@ -64,16 +63,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_name`, `email`, `user_credits`) VALUES
-(1, 'Nikhil Duttaroy', 'nikhil@gmail.com', 500),
-(2, 'Ashwith poojary', 'Ashwith@gmail.com', 500),
-(3, 'Chinmay Mhatre', 'chinmay@gmail.com', 450),
-(4, 'Soham Lanke', 'Soham@gmail.com', 400),
-(5, 'Ruthvij Rane', 'ruthvijgmail.com', 400),
-(6, 'Tanmay Hinge', 'Tanmay@gmail.com', 300),
-(7, 'Ritika Radhakrishnan', 'ritika@gmail.com', 950),
-(8, 'Aastha Angre', 'aastha@gmail.com', 500),
-(9, 'Rutuja Jadhav', 'rutuja@gmail.com', 500),
-(10, 'Prasad Patil', 'prasad@gmail.com', 500);
+(1, 'Prajkta Ghorpade', 'Prajkta@gmail.com', 500),
+(2, 'Blessy Thomas', 'blessy@gmail.com', 330),
+(3, 'Ajay Ghorpade', 'Akshay@gmail.com', 500),
+(4, 'Akshay Savad', 'Akshay@gmail.com', 670),
+(5, 'Sarika Patil', 'sarika@gmail.com', 450);
 
 --
 -- Indexes for dumped tables
